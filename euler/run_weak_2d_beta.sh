@@ -60,7 +60,7 @@ done;
 
 cd $cwd;
 cd notebooks; 
-bsub -J weak_chain -w "done(weak_chain_beta)"  -N -B $HOME/.local/bin/jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute WeakScalingReport.ipynb --output ../reports/WeakScalingReport_euler_beta_$(date +%Y%m%d).ipynb
+bsub -J weak_chain_beta -w "done(weak_chain_beta)"  -N -B $HOME/.local/bin/jupyter nbconvert --ExecutePreprocessor.timeout=-1 --to notebook --execute WeakScalingReport.ipynb --output ../reports/WeakScalingReport_euler_beta_$(date +%Y%m%d).ipynb
     
     
 
