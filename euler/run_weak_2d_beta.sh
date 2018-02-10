@@ -46,16 +46,16 @@ do
     cpus=$((($N*$N)/($BASE_N*$BASE_N)))
     # first we do multiy
     cd runs/multiy/2d/weak_scaling/kelvinhelmholtz_${N}/
-    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli --multi-y ${cpus} kelvinhelmholtz/kelvinhelmholtz.xml
+    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-y ${cpus} kelvinhelmholtz/kelvinhelmholtz.xml
 
     cd $cwd
     cd runs/multix/2d/weak_scaling/kelvinhelmholtz_${N}/
-    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli --multi-x ${cpus} kelvinhelmholtz/kelvinhelmholtz.xml
+    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-x ${cpus} kelvinhelmholtz/kelvinhelmholtz.xml
 
     cd $cwd
     cd runs/multixmultiy/2d/weak_scaling/kelvinhelmholtz_${N}/
     x_cpus=$(($N/${BASE_N}))
-    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli --multi-x ${x_cpus} --multi-y ${x_cpus} kelvinhelmholtz/kelvinhelmholtz.xml
+    bsub -N -B -R beta -n ${cpus} -J weak_chain_beta -W 24:00 mpirun -np ${cpus} ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-x ${x_cpus} --multi-y ${x_cpus} kelvinhelmholtz/kelvinhelmholtz.xml
 done;
 
 cd $cwd;
