@@ -18,3 +18,9 @@ def get_threads(report):
 
 def get_total_cores(report):
     return int(get_threads(report)*get_processes(report))
+
+def get_revision(report):
+    return read_run(report)['report']['revision']
+
+def get_build_type(report):
+    return read_run(report)['report']['buildType']
