@@ -1,0 +1,24 @@
+{
+    "report": {
+        "executable": "alsuqcli",
+        "name": "kh_1024",
+        "currentWorkingDirectory": "\/scratch\/snx3000\/klye\/alsvinn_scalings\/comparisons\/daint",
+        "endTime": "20180213T213856",
+        "cpuDuration": "2215763",
+        "cpuDurationHuman": "00:36:55",
+        "wallTime": "2217000",
+        "wallTimeHuman": "00:36:57",
+        "timesteps": "23165",
+        "command": "alsvinn\/build\/alsuqcli\/alsuqcli --multi-x 8 ..\/kelvinhelmholtz_1024\/kelvinhelmholtz\/kelvinhelmholtz.xml ",
+        "revision": "913710c6f609e66be6a21a3e2db6640447398e1b",
+        "versionControlStatus": "CLEAN",
+        "buildType": "Release",
+        "cxxFlags": "",
+        "cudaFlags": "--use_fast_math  -Xptxas -v -arch=compute_50 -code=sm_50",
+        "cudaVersion": "8.0",
+        "mpiEnabled": "true",
+        "mpiProcesses": "8",
+        "ompEnabled": "true",
+        "ompThreads": "1"
+    }
+}
