@@ -55,6 +55,7 @@ cd $cwd
 echo $cwd
 bsub -N -B -R beta -n 32 -W 24:00 mpirun -np 32 ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-y 32 kelvinhelmholtz_1024/kelvinhelmholtz/kelvinhelmholtz.xml
 bsub -N -B -R beta -n 32 -W 24:00 mpirun -np 32 ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-y 32 kelvinhelmholtz_2048/kelvinhelmholtz/kelvinhelmholtz.xml
+bsub -N -B -R beta -n 32 -W 24:00 mpirun -np 32 ${cwd}/alsvinn/build/alsuqcli/alsuqcli --multi-y 32 kelvinhelmholtz_4096/kelvinhelmholtz/kelvinhelmholtz.xml
     
     
 
