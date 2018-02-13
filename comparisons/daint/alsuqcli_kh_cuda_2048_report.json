@@ -1,0 +1,24 @@
+{
+    "report": {
+        "executable": "alsuqcli",
+        "name": "kh_cuda_2048",
+        "currentWorkingDirectory": "\/scratch\/snx3000\/klye\/alsvinn_scalings\/comparisons\/daint",
+        "endTime": "20180213T232243",
+        "cpuDuration": "1087445",
+        "cpuDurationHuman": "00:18:07",
+        "wallTime": "1270000",
+        "wallTimeHuman": "00:21:10",
+        "timesteps": "48254",
+        "command": "alsvinn\/build\/alsuqcli\/alsuqcli ..\/kelvinhelmholtz_2048\/kelvinhelmholtz_cuda\/kelvinhelmholtz.xml ",
+        "revision": "913710c6f609e66be6a21a3e2db6640447398e1b",
+        "versionControlStatus": "DIRTY",
+        "buildType": "Release",
+        "cxxFlags": "",
+        "cudaFlags": "--use_fast_math  -Xptxas -v -arch=compute_60 -code=sm_60",
+        "cudaVersion": "8.0",
+        "mpiEnabled": "true",
+        "mpiProcesses": "1",
+        "ompEnabled": "true",
+        "ompThreads": "1"
+    }
+}
