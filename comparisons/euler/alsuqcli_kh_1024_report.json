@@ -1,0 +1,24 @@
+{
+    "report": {
+        "executable": "alsuqcli",
+        "name": "kh_1024",
+        "currentWorkingDirectory": "\/cluster\/scratch\/klye\/alsvinn_scalings_comparisons\/comparisons",
+        "endTime": "20180213T204237",
+        "cpuDuration": "473376",
+        "cpuDurationHuman": "00:07:53",
+        "wallTime": "475000",
+        "wallTimeHuman": "00:07:55",
+        "timesteps": "23222",
+        "command": "\/cluster\/scratch\/klye\/alsvinn_scalings_comparisons\/comparisons\/alsvinn\/build\/alsuqcli\/alsuqcli --multi-y 32 kelvinhelmholtz_1024\/kelvinhelmholtz\/kelvinhelmholtz.xml ",
+        "revision": "913710c6f609e66be6a21a3e2db6640447398e1b",
+        "versionControlStatus": "CLEAN",
+        "buildType": "Release",
+        "cxxFlags": "",
+        "cudaFlags": "",
+        "cudaVersion": "",
+        "mpiEnabled": "true",
+        "mpiProcesses": "32",
+        "ompEnabled": "true",
+        "ompThreads": "1"
+    }
+}
