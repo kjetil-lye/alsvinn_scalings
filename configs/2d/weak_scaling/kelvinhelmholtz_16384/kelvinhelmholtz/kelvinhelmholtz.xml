@@ -1,18 +1,17 @@
 <config>
 <fvm>
   <name>
-    kh_2048
+    kh_16384
   </name>
   <platform>cpu</platform>
   <grid>
     <lowerCorner>0 0 0</lowerCorner>
     <upperCorner>1 1 0</upperCorner>
-    <dimension>2048 2048 1</dimension>
+    <dimension>16384 16384 1</dimension>
   </grid>
   <boundary>periodic</boundary>
   <flux>hll3</flux>
- <endTime>0.1</endTime>
-
+  <endTime>2</endTime>
   <equation>euler2</equation>
   <equationParameters>
     <gamma>1.4</gamma>
@@ -36,6 +35,11 @@
     <name>none</name>
     <reconstruction>none</reconstruction>
   </diffusion>
+  <writer>
+    <type>netcdf</type>
+    <basename>kh_8192</basename>
+    <numberOfSaves>1</numberOfSaves>
+  </writer>
 </fvm>
 <uq>
   <samples>1</samples>

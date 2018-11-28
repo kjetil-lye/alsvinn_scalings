@@ -3,7 +3,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=kjetil.lye@sam.math.ethz.ch
 #SBATCH --time=01:00:00
-#SBATCH --nodes=1
+#SBATCH --nodes=TOTAL_NODES_TO_USE
 #SBATCH --ntasks-per-core=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
@@ -11,6 +11,4 @@
 #SBATCH --constraint=gpu
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-export CRAY_CUDA_MPS=1
-
-srun nvprof -o nvprof.output.%h.%p $HOME/alsvinn/build/alsuqcli/alsuqcli ../kelvinhelmholtz_4096/kelvinhelmholtz/kelvinhelmholtz.xml
+srun  $HOME/alsvinn/build/alsuqcli/alsuqcli --multi-x X_NODES_TO_USE --multi-x Y_NODES_TO_USE kelvinhelmholtz/kelvinhelmholtz.xml

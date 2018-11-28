@@ -13,4 +13,4 @@
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export CRAY_CUDA_MPS=1
 
-srun nvprof -o nvprof.output.%h.%p ../alsvinn/build/alsuqcli/alsuqcli ../kelvinhelmholtz_2048/kelvinhelmholtz/kelvinhelmholtz.xml
+srun nvprof -o nvprof.output.%h.%p $HOME/alsvinn/build/alsuqcli/alsuqcli ../kelvinhelmholtz_2048/kelvinhelmholtz/kelvinhelmholtz.xml
