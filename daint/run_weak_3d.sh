@@ -32,7 +32,7 @@ do
 	    sed -i "s/z_NODES_TO_USE/${cpus}/g" submit.sh
 	    sed -i "s/NX/${N}/g" submit.sh
 	    sed -i 's/cpu/cuda/g' kelvinhelmholtz/kelvinhelmholtz.xml
-	    #sbatch submit.sh
+	    sbatch submit.sh
 	    
 	    cd $cwd
 	    cd runs/base_${BASE_N}_3d_multiy/3d/weak_scaling/kelvinhelmholtz_${N}/
@@ -43,7 +43,7 @@ do
 	    sed -i "s/01:00:00/24:00:00/g" submit.sh
 	    sed -i "s/NX/${N}/g" submit.sh
 	    sed -i 's/cpu/cuda/g' kelvinhelmholtz/kelvinhelmholtz.xml
-	    #sbatch submit.sh
+	    sbatch submit.sh
 
 	    cd $cwd
 	    cd runs/base_${BASE_N}_3d_multixmultiymultiz/3d/weak_scaling/kelvinhelmholtz_${N}/
@@ -55,7 +55,7 @@ do
 	    sed -i "s/01:00:00/24:00:00/g" submit.sh
 	    sed -i 's/cpu/cuda/g' kelvinhelmholtz/kelvinhelmholtz.xml
 	    sed -i "s/NX/${N}/g" submit.sh
-	    #sbatch submit.sh
+	    sbatch submit.sh
 	    N=$((2*$N))
 	fi;
     done;
