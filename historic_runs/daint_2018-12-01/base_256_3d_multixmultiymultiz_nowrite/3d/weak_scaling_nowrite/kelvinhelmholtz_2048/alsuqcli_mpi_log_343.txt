@@ -1,0 +1,29 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Git version:       a1864525e52f1f03fd2f72a7bda5d2a22a5a2a86
+Repository was:    DIRTY
+Build type :       Release
+CUDA Version:      9.1
+Extra CXX flags:   
+CUDA flags:        --use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60  -gencode arch=compute_61,code=sm_61
+Floating point:    double (double precision, 64 bits)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+omp max threads= 1
+sampleStart = 0
+Running simulator... 
+Running sample: 0
+
+Reading parameter array
+Read value 0
+Dimensions are 256, 256, 256
+Pythonprogram executed
+InitialData grid sizes[256, 256, 256]
+Using depreacted functions getCellMidpoints()
+[256, 256, 256]
+Done setting initial data
+Simulation finished!
+
+Duration: 6774340 ms
+
+Duration (wall time): 02:59:01
+
