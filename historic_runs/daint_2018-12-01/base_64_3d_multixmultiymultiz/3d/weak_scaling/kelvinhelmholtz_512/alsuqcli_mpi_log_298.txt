@@ -1,0 +1,34 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Git version:       f667b0108553bc2635ce52cc79fcec4c59d95a4b
+Repository was:    CLEAN
+Build type :       Release
+CUDA Version:      9.1
+Extra CXX flags:   
+CUDA flags:        --use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60  -gencode arch=compute_61,code=sm_61
+Floating point:    double (double precision, 64 bits)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+omp max threads= 1
+sampleStart = 0
+Running simulator... 
+Running sample: 0
+
+Reading parameter array
+Read value 0
+Adding writer kh_512
+Dimensions are 64, 64, 64
+Pythonprogram executed
+InitialData grid sizes[64, 64, 64]
+Done setting initial data
+NetCDFMPIWriter: Writing to new file kh_512_0.nc
+
+Making new file with sizes [512, 512, 512]
+NetCDFMPIWriter: Writing to new file kh_512_1.nc
+
+Making new file with sizes [512, 512, 512]
+Simulation finished!
+
+Duration: 221345 ms
+
+Duration (wall time): 00:04:56
+

@@ -1,0 +1,34 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+Git version:       67d2b96dc2b329407bf8a48e4c1b2ee70724c679
+Repository was:    DIRTY
+Build type :       Release
+CUDA Version:      9.1
+Extra CXX flags:   
+CUDA flags:        --use_fast_math -Xptxas -warn-spills -gencode arch=compute_50,code=sm_50 -gencode arch=compute_60,code=sm_60  -gencode arch=compute_61,code=sm_61
+Floating point:    double (double precision, 64 bits)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+omp max threads= 1
+sampleStart = 0
+Running simulator... 
+Running sample: 0
+
+Reading parameter array
+Read value 0
+Adding writer kh_8192
+Dimensions are 256, 16384, 1
+Pythonprogram executed
+InitialData grid sizes[256, 16384, 1]
+Done setting initial data
+Writing to new file kh_8192_0.nc
+
+Making new file with sizes [16384, 16384, 1]
+Writing to new file kh_8192_1.nc
+
+Making new file with sizes [16384, 16384, 1]
+Simulation finished!
+
+Duration: 5841451 ms
+
+Duration (wall time): 02:02:36
+
