@@ -1,6 +1,6 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
-Git version:       f667b0108553bc2635ce52cc79fcec4c59d95a4b
-Repository was:    CLEAN
+Git version:       a1864525e52f1f03fd2f72a7bda5d2a22a5a2a86
+Repository was:    DIRTY
 Build type :       Release
 CUDA Version:      9.1
 Extra CXX flags:   
@@ -12,4 +12,25 @@ omp max threads= 1
 sampleStart = 0
 Running simulator... 
 Running sample: 0
+
+Reading parameter array
+Read value 0
+Adding writer kh_2048
+Dimensions are 256, 256, 256
+Pythonprogram executed
+InitialData grid sizes[256, 256, 256]
+Using depreacted functions getCellMidpoints()
+[256, 256, 256]
+Done setting initial data
+NetCDFMPIWriter: Writing to new file kh_2048_0.nc
+
+Making new file with sizes [2048, 2048, 2048]
+NetCDFMPIWriter: Writing to new file kh_2048_1.nc
+
+Making new file with sizes [2048, 2048, 2048]
+Simulation finished!
+
+Duration: 9585654 ms
+
+Duration (wall time): 03:45:11
 
