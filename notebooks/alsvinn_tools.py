@@ -24,3 +24,6 @@ def get_revision(report):
 
 def get_build_type(report):
     return read_run(report)['report']['buildType']
+
+def get_gpu_name(report):
+    return read_run(report)['report']['cudaProperties']['name']
