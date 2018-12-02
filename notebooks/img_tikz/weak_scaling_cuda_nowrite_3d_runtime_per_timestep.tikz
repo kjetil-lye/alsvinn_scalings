@@ -14,12 +14,12 @@ width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Number of nodes},
 xmajorgrids,
-xmin=0.812252396356235, xmax=78.7932424540746,
+xmin=0.732042847972813, xmax=699.41261145825,
 xmode=log,
 y grid style={white!69.01960784313725!black},
 ylabel={Runtime per timestep (ms)},
 ymajorgrids,
-ymin=0.869565217391304, ymax=1412.37178277012,
+ymin=0.869565217391304, ymax=1448.11082274428,
 ymode=log
 ]
 \addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
@@ -27,6 +27,7 @@ table [row sep=\\]{%
 1	140.195959840329 \\
 8	171.379918506355 \\
 64	176.546472846265 \\
+512	181.013852843035 \\
 };
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
@@ -35,7 +36,7 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
-Commit: a09ee00e6d721f0026a9d3f9b876d086a5bc52e8
+Commit: 07f3339620fdfc3a7e29477aca990f2e89f907db
 Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
 Hostname: galerkin};
 \end{axis}
