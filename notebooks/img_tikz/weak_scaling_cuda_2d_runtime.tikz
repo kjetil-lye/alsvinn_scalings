@@ -1,0 +1,63 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+height=\figureheight,
+legend cell align={left},
+legend entries={{multix},{multiy},{multixmultiy}},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+tick align=outside,
+tick pos=left,
+title={Runtime (Each core gets 16777216 cells)
+GPU: Tesla P100-PCIE-16GB},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Number of cores},
+xmin=0.812252396356236, xmax=78.7932424540746,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={Runtime (ms)},
+ymin=5745880.75595419, ymax=80939653.9456669,
+ymode=log
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	6481000 \\
+4	12074000 \\
+16	22188000 \\
+64	43850000 \\
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	6480000 \\
+4	14276000 \\
+16	31987000 \\
+64	71770000 \\
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	6480000 \\
+4	13581000 \\
+16	27592000 \\
+64	58420000 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: a09ee00e6d721f0026a9d3f9b876d086a5bc52e8
+Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}

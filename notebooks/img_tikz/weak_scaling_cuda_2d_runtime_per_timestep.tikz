@@ -1,0 +1,66 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+height=\figureheight,
+legend cell align={left},
+legend entries={{multix},{multiy},{multixmultiy}},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+tick align=outside,
+tick pos=left,
+title={Runtime per timestep
+(Each core gets 16777216 cells ( 4096 x 4096 ))
+GPU: Tesla P100-PCIE-16GB},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Number of cores},
+xmajorgrids,
+xmin=0.812252396356235, xmax=78.7932424540746,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={Runtime per timestep (ms)},
+ymajorgrids,
+ymin=0.770009477039717, ymax=587.244992932522,
+ymode=log
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	65.1651500678699 \\
+4	67.627817358964 \\
+16	69.3440010000938 \\
+64	73.285234153426 \\
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	65.1550952692172 \\
+4	67.2685464414958 \\
+16	68.5352982389983 \\
+64	73.4056241165653 \\
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	65.1550952692172 \\
+4	66.7148078283424 \\
+16	67.5588985686093 \\
+64	68.8983342689606 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: a09ee00e6d721f0026a9d3f9b876d086a5bc52e8
+Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}
