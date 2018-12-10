@@ -9,7 +9,8 @@ tick align=outside,
 tick pos=left,
 title={Runtime per timestep
 (Each core gets 16777216 cells ( 256 x 256 x 256))
-GPU: Tesla P100-PCIE-16GB},
+GPU: Tesla P100-PCIE-16GB
+Alsvinn commit: a1864525e52f1f03fd2f72a7bda5d2a22a5a2a86},
 width=\figurewidth,
 x grid style={white!69.01960784313725!black},
 xlabel={Number of nodes},
@@ -36,7 +37,7 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
-Commit: 07f3339620fdfc3a7e29477aca990f2e89f907db
+Commit: feee76cd2eed662aa1b39572f3d5a5d9e48fdacf
 Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
 Hostname: galerkin};
 \end{axis}

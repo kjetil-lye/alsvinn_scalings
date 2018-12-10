@@ -36,7 +36,7 @@ table [row sep=\\]{%
   rotate=0.0,
   align=right
 ]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
-Commit: 07f3339620fdfc3a7e29477aca990f2e89f907db
+Commit: feee76cd2eed662aa1b39572f3d5a5d9e48fdacf
 Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
 Hostname: galerkin};
 \end{axis}
