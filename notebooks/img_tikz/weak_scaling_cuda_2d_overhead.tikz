@@ -1,0 +1,67 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+\definecolor{color1}{rgb}{1,0.498039215686275,0.0549019607843137}
+\definecolor{color2}{rgb}{0.172549019607843,0.627450980392157,0.172549019607843}
+
+\begin{axis}[
+height=\figureheight,
+legend cell align={left},
+legend entries={{multix},{multiy},{multixmultiy}},
+legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+tick align=outside,
+tick pos=left,
+title={MPI Overhead of total runtime
+(Each core gets 16777216 cells ( 4096 x 4096))
+GPU: Tesla P100-PCIE-16GB},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Number of nodes},
+xmajorgrids,
+xmin=0.812252396356235, xmax=78.7932424540746,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={MPI Overhead},
+ymajorgrids,
+ymin=0, ymax=100,
+ytick={0,10,20,30,40,50,60,70,80,90,100},
+yticklabels={0 %,10 %,20 %,30 %,40 %,50 %,60 %,70 %,80 %,90 %,100 %}
+]
+\addlegendimage{no markers, color0}
+\addlegendimage{no markers, color1}
+\addlegendimage{no markers, color2}
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	0 \\
+4	3.77911704113204 \\
+16	6.41270821577418 \\
+64	12.4607770826876 \\
+};
+\addplot [semithick, color1, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	0 \\
+4	3.24372355461362 \\
+16	5.18793343147494 \\
+64	12.6629065819908 \\
+};
+\addplot [semithick, color2, mark=*, mark size=3, mark options={solid}]
+table [row sep=\\]{%
+1	0 \\
+4	2.39384587295974 \\
+16	3.68935582007777 \\
+64	5.74512090616479 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: feee76cd2eed662aa1b39572f3d5a5d9e48fdacf
+Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}

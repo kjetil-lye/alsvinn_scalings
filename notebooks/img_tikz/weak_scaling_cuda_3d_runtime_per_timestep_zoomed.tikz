@@ -1,0 +1,45 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+height=\figureheight,
+tick align=outside,
+tick pos=left,
+title={Runtime per timestep
+(Each core gets 16777216 cells ( 256 x 256 x 256))
+GPU: Tesla P100-PCIE-16GB
+Alsvinn commit: a1864525e52f1f03fd2f72a7bda5d2a22a5a2a86},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Number of nodes},
+xmajorgrids,
+xmin=0.732042847972813, xmax=699.41261145825,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={Runtime per timestep (ms)},
+ymajorgrids,
+ymin=64, ymax=1024,
+ymode=log
+]
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
+table [row sep=\\]{%
+1	141.647514213137 \\
+8	174.238277686554 \\
+64	190.170536781826 \\
+512	227.712427112474 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: feee76cd2eed662aa1b39572f3d5a5d9e48fdacf
+Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}

@@ -1,0 +1,45 @@
+% This file was created by matplotlib2tikz v0.6.18.
+\begin{tikzpicture}
+
+\definecolor{color0}{rgb}{0.12156862745098,0.466666666666667,0.705882352941177}
+
+\begin{axis}[
+height=\figureheight,
+tick align=outside,
+tick pos=left,
+title={MPI Overhead of total runtime
+(Each core gets 16777216 cells ( 256 x 256 x 256))
+GPU: Tesla P100-PCIE-16GB},
+width=\figurewidth,
+x grid style={white!69.01960784313725!black},
+xlabel={Number of nodes},
+xmajorgrids,
+xmin=0.732042847972813, xmax=699.41261145825,
+xmode=log,
+y grid style={white!69.01960784313725!black},
+ylabel={MPI Overhead},
+ymajorgrids,
+ymin=0, ymax=100,
+ytick={0,10,20,30,40,50,60,70,80,90,100},
+yticklabels={0 %,10 %,20 %,30 %,40 %,50 %,60 %,70 %,80 %,90 %,100 %}
+]
+\addplot [semithick, color0, mark=*, mark size=3, mark options={solid}, forget plot]
+table [row sep=\\]{%
+1	0 \\
+8	22.2431221994857 \\
+64	25.9283598809382 \\
+512	29.1148853713002 \\
+};
+\node at (axis cs:0.95,0.01)[
+  scale=0.15,
+  anchor=south east,
+  text=white!50.19607843137255!black,
+  rotate=0.0,
+  align=right
+]{ By Kjetil Lye@ETHZ <kjetil.o.lye@gmail.com>
+Commit: feee76cd2eed662aa1b39572f3d5a5d9e48fdacf
+Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
+Hostname: galerkin};
+\end{axis}
+
+\end{tikzpicture}
