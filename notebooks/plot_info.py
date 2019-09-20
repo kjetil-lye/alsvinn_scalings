@@ -255,12 +255,12 @@ def savePlot(name):
     with RedirectStdStreamsToNull():
         if savePlot.saveTikz:
             try:
-                tikzplotlib.save('../img_tikz/' + name + '.xyz',
+                tikzplotlib.save('img_tikz/' + name + '.xyz',
                                      figureheight='\\figureheight',
                                      figurewidth='\\figurewidth',
                                      show_info=False)
 
-                with open('../img_tikz/' + name + '.xyz', 'a') as f:
+                with open('img_tikz/' + name + '.xyz', 'a') as f:
                     f.write("\n\n")
                     f.write("%% INCLUDE THE COMMENTS AT THE END WHEN COPYING\n")
                     f.write("%%%%%%%%%%%%%TITLE%%%%%%%%%%%%%%%%%\n")
@@ -307,7 +307,7 @@ def savePlot(name):
                 console_log(
                     "Failed to save tikz file {}.xyz (probably just a 3d plot, they do not work in tikz)".format(name))
 
-    savenamepng = '../img/' + name + '.png'
+    savenamepng = 'img/' + name + '.png'
     plt.savefig(savenamepng, bbox_inches='tight')
 
     writeMetadata(savenamepng, get_plot_metadata())
