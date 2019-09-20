@@ -8,7 +8,7 @@
 \begin{axis}[
 height=\figureheight,
 legend cell align={left},
-legend style={at={(1,0.5)}, anchor=west, draw=white!80.0!black},
+legend style={draw=white!80.0!black},
 log basis x={2},
 log basis y={10},
 tick align=outside,
@@ -62,7 +62,7 @@ table {%
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: a86032f8be4d081b35e6614a8c3a384352106623
+Commit: 64ee64b0c61ad55bd47e66af149d64ae0c1d6b5e
 Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
 Hostname: galerkin};
 \node at (axis cs:0.2,0.93)[
@@ -70,7 +70,7 @@ Hostname: galerkin};
   anchor=south east,
   text=white!50.19607843137255!black,
   rotate=0.0
-]{@a860};
+]{@64ee6};
 \node at (axis cs:0.95,0.01)[
   scale=0.15,
   anchor=south east,
@@ -78,7 +78,7 @@ Hostname: galerkin};
   rotate=0.0,
   align=right
 ]{By Kjetil Olsen Lye @ ETHZ <kjetil.o.lye@gmail.com>
-Commit: a86032f8be4d081b35e6614a8c3a384352106623
+Commit: 64ee64b0c61ad55bd47e66af149d64ae0c1d6b5e
 Repo: git@github.com:kjetil-lye/alsvinn_scalings.git
 Hostname: galerkin};
 \end{axis}
@@ -92,14 +92,14 @@ Hostname: galerkin};
 %% script name: /usr/lib/python3.7/site-packages/ipykernel_launcher.py
 %% ALWAYS INCLUDE THE COMMENTS WHEN COPYING THIS PLOT
 %% DO NOT REMOVE THE COMMENTS BELOW!
-%% GIT git_commit : a86032f8be4d081b35e6614a8c3a384352106623
+%% GIT git_commit : 64ee64b0c61ad55bd47e66af149d64ae0c1d6b5e
 %% GIT git_repo_modified : True
 %% GIT git_branch : master
 %% GIT git_remote_url : git@github.com:kjetil-lye/alsvinn_scalings.git
-%% GIT git_short_commit : a860
+%% GIT git_short_commit : 64ee6
 %% working_directory : /home/kjetil/projects/alsvinn_scalings/notebooks
 %% hostname : galerkin
-%% generated_on_date : 2019-09-20 19:06:03.001734
+%% generated_on_date : 2019-09-20 23:00:29.211208
 %% accessed_environment:
 %% additional_parameters:
 %%    commandrun=/usr/bin/python3 /usr/lib/python3.7/site-packages/ipykernel_launcher.py -f /home/kjetil/.local/share/jupyter/runtime/kernel-ccbc01d6-ee4b-4510-b39c-acd67004d5b7.json
@@ -1184,7 +1184,7 @@ Hostname: galerkin};
 %% stacktrace:
 %%     [function: savePlot, line: 304, file: /home/kjetil/projects/alsvinn_scalings/notebooks/plot_info.py]
 %%     [function: savePlot, line: 326, file: /home/kjetil/projects/alsvinn_scalings/notebooks/plot_info.py]
-%%     [function: <module>, line: 97, file: <ipython-input-2-274871b0dcde>]
+%%     [function: <module>, line: 100, file: <ipython-input-2-644b8cecaa5d>]
 %%     [function: run_code, line: 3325, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_ast_nodes, line: 3248, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
 %%     [function: run_cell_async, line: 3057, file: /usr/lib/python3.7/site-packages/IPython/core/interactiveshell.py]
